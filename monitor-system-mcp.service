@@ -1,0 +1,16 @@
+[Unit]
+Description=Monitor System MCP Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/monitor_system_mcp
+ExecStart=/bin/bash /home/monitor_system_mcp/start_python3.sh
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

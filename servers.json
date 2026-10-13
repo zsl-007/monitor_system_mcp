@@ -1,0 +1,24 @@
+{
+  "servers": [
+    {
+      "id": "prod-db-01",
+      "name": "236服务器",
+      "environment": "production",
+      "role": "database",
+      "os": "Ubuntu 24.04",
+      "description": "核心业务 大模型 web 服务器",
+      "monitor_system_url": "http://192.168.0.236:18771",
+      "monitor_system_token": "xxxxxxxx"
+    },
+    {
+      "id": "prod-web-01",
+      "name": "98服务器",
+      "environment": "production",
+      "role": "web",
+      "os": "Ubuntu 24.04",
+      "description": "核心业务 测试环境 Web 服务器",
+      "monitor_system_url": "http://192.168.0.98:18770",
+      "monitor_system_token": "xxxxxxxx"
+    }
+  ]
+}
